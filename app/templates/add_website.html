@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+	<h2 class="title">Check the website</h2>
+	<form class="form-group" method="POST" action="/add_website">
+		{{ form.csrf_token }}
+		<div class="form-group">
+			{{ form.address.label(class="form-control-label") }} 
+			{{ form.address(class="form-control form-control-lg")}}
+		</div>
+		<input class="form-group" type="submit" value="Go">
+		{{ form.submit }}
+	</form>
+</div>
+{% endblock content %}

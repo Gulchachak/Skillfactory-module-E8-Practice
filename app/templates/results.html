@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+	<thead>
+		<h2>Results:</h2>
+		{% for res in results %}
+		<TR>
+			<td>{{res._id}}</td>
+			<TD>{{res.address}}</TD>
+			<TD>{{res.words_count}}</TD>
+			<TD><SPAN>{{res.http_status_code}}</SPAN></TD>
+		</TR>
+		{% endfor %}
+	</thead>
+</table>   
+{% endblock content %}
