@@ -4,19 +4,13 @@
 
 Для запуска на локальной машине необходимо:
 
-  склонировать этот репозиторий
-
-  перейти в папку репозиторием
-
-  python -m venv venv
-
-  pip install -r requirements.txt
-
-  запустить redis redis-server.exe
-
-  запустить celery командой celery -A app.celery worker --pool=solo --loglevel=info
-
-  запустить сервер python app.py
+- склонировать этот репозиторий
+- перейти в папку репозиторием
+- python -m venv venv
+- pip install -r requirements.txt
+- запустить redis redis-server.exe
+- запустить celery командой celery -A app.celery worker --pool=solo --loglevel=info
+- запустить сервер python app.py
 
   После того как команды выполнены успешно, на 127.0.0.1:5000 запускается приложение с двумя эндпоинтами: 
 - /add_website, / -- форма для добавления сайта в очередь для подсчета слова Python
